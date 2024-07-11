@@ -9,7 +9,7 @@ public class TargetDummy : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Weapon"))
+        if (other.gameObject.CompareTag("Weapon") || other.gameObject.CompareTag("Epee"))
         {
             dummyAnimator.SetTrigger("Die");
         }

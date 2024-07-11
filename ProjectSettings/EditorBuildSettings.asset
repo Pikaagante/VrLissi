@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pnj.unity
     guid: c9d1e948a75a485448aeaad582eb483e
+  - enabled: 1
+    path: Assets/Scenes/Pnj2.unity
+    guid: 92d01c4cbaaaabf4b9cf5be19644ae74
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7260f07bdeb9f134393b500beadc38ac,
       type: 2}

@@ -12,7 +12,7 @@ public class Fire : MonoBehaviour
     {
         GameObject spawnBullet = Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);
         Rigidbody bulletRigidbody = spawnBullet.GetComponent<Rigidbody>();
-        bulletRigidbody.useGravity = false; // Désactive la gravité pour ce Rigidbody
+        bulletRigidbody.useGravity = false; 
         bulletRigidbody.velocity = spawnPoint.forward * bulletSpeed;
         Destroy(spawnBullet, 5f);
     }

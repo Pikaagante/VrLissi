@@ -7,8 +7,14 @@ public class ButtonScript : MonoBehaviour
 {
     [SerializeField] private Text dialogueText;
     [SerializeField] private string[] dialogues;
+    [SerializeField] private string[] dialoguesEpee;
+    [SerializeField] private string[] dialoguesWeapon;
     [SerializeField] private Canvas canvasToControl;
-    private int dialogueIndex = 0; 
+    [SerializeField] private GameObject potion;
+    [SerializeField] private GameObject potion2;
+    [SerializeField] private Transform spawnPoint;
+    private int dialogueIndex = 0;
+    private int Dialog;
 
     public void NextDialogue()
     {
@@ -19,10 +25,27 @@ public class ButtonScript : MonoBehaviour
         }
         else
         {
+            if (Dialog == 2)
+            {
+                GameObject spawnPotion = Instantiate(potion, spawnPoint.position, spawnPoint.rotation);
+                Rigidbody potionRigidbody = spawnPotion.GetComponent<Rigidbody>();
+                potionRigidbody.useGravity = false;
+            }
+            else if (Dialog == 3)
+            {
+                GameObject spawnPotion = Instantiate(potion2, spawnPoint.position, spawnPoint.rotation);
+                Rigidbody potionRigidbody = spawnPotion.GetComponent<Rigidbody>();
+                potionRigidbody.useGravity = false;
+            }
             canvasToControl.enabled = false;
             dialogueIndex = 0;
             dialogueText.text = dialogues[dialogueIndex];
+            }
         }
+
+    public void SetDialog(int dialogIndex)
+    {
+        Dialog = dialogIndex; 
     }
 }
 
