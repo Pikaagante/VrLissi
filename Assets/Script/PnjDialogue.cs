@@ -6,6 +6,9 @@ public class PnjDialogue : MonoBehaviour
 {
     [SerializeField] private Canvas canvasToControl;
     private ButtonScript buttonScript;
+    [SerializeField] private string[] dialogues;
+    [SerializeField] private string[] dialoguesDrink;
+    [SerializeField] private string[] dialoguesDish;
 
     private void Start()
     {
@@ -17,14 +20,17 @@ public class PnjDialogue : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             buttonScript.SetDialog(1);
+            buttonScript.SetDialogText(dialogues);
             canvasToControl.enabled = true;
-        } else if (other.gameObject.CompareTag("Epee"))
+        } else if (other.gameObject.CompareTag("drink"))
         {
             buttonScript.SetDialog(3);
+            buttonScript.SetDialogText(dialoguesDrink);
             canvasToControl.enabled = true;
-        } else if (other.gameObject.CompareTag("Weapon"))
+        } else if (other.gameObject.CompareTag("dish"))
         {
             buttonScript.SetDialog(2);
+            buttonScript.SetDialogText(dialoguesDish);
             canvasToControl.enabled = true;
         }
     }

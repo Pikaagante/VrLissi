@@ -2719,13 +2719,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: -0.53424346, y: 0.52178633, z: -0.40528613, w: -0.5273199}
+  m_LocalPosition: {x: -3.77, y: 9.21, z: -12.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 80.533, y: -134.532, z: 307.73}
 --- !u!114 &410087042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3193,8 +3193,6 @@ MonoBehaviour:
   dialogues:
   - It's dangerous to go alone
   - take this
-  dialoguesEpee: []
-  dialoguesWeapon: []
   canvasToControl: {fileID: 448195622}
   potion: {fileID: 2387034736654920615, guid: c83975ee696d7544bb1182879f429332, type: 3}
   potion2: {fileID: 2387034736654920615, guid: e5043eb9e149702498bc161a46b9d4c1, type: 3}

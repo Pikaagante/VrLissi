@@ -7,8 +7,6 @@ public class ButtonScript : MonoBehaviour
 {
     [SerializeField] private Text dialogueText;
     [SerializeField] private string[] dialogues;
-    [SerializeField] private string[] dialoguesEpee;
-    [SerializeField] private string[] dialoguesWeapon;
     [SerializeField] private Canvas canvasToControl;
     [SerializeField] private GameObject potion;
     [SerializeField] private GameObject potion2;
@@ -46,6 +44,18 @@ public class ButtonScript : MonoBehaviour
     public void SetDialog(int dialogIndex)
     {
         Dialog = dialogIndex; 
+    }
+
+    public void SetDialogText(string[] dialogue)
+    {
+        dialogues = dialogue;
+        dialogueIndex = 0;
+
+        if (dialogues.Length > 0)
+        {
+            dialogueText.text = dialogues[dialogueIndex];
+            canvasToControl.enabled = true; 
+        }
     }
 }
 
