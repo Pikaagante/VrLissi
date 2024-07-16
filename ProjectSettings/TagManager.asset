@@ -12,6 +12,7 @@ TagManager:
   - Epee
   - drink
   - dish
+  - Cible
   layers:
   - Default
   - TransparentFX

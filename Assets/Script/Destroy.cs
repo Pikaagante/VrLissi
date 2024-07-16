@@ -6,11 +6,17 @@ public class Destroy : MonoBehaviour
 {
     public GameObject DestructObject;
     public Stat stat;
+    public WinCible winCible;
     void Start()
     {
         if (stat == null)
         {
             stat = FindObjectOfType<Stat>();
+        }
+
+        if (winCible == null)
+        {
+            winCible = FindObjectOfType<WinCible>();
         }
     }
 
@@ -20,7 +26,12 @@ public class Destroy : MonoBehaviour
         {
             Destroy(DestructObject);
             stat.SetCibleShoot(stat.CibleShoot + 1);
+            if (winCible != null)
+            {
+                winCible.CibleDestroyed();
+            }
         }
     }
 }
+
 
