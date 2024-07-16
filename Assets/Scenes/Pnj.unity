@@ -430,7 +430,7 @@ MonoBehaviour:
   canvasToControl: {fileID: 53077311}
   potion: {fileID: 2387034736654920615, guid: c83975ee696d7544bb1182879f429332, type: 3}
   potion2: {fileID: 2387034736654920615, guid: e5043eb9e149702498bc161a46b9d4c1, type: 3}
-  spawnPoint: {fileID: 0}
+  spawnPoint: {fileID: 556088692}
 --- !u!114 &53077313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2311,6 +2311,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1726723850}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &333787381 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8009627955684003278, guid: 832db48e65a1b724fb523937ee7fe97a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1506801590}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &339015095 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4748624645171214, guid: 56edbd376562e9544ab88753fd3c4682,
@@ -3369,6 +3375,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1511280247}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &556088691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 556088692}
+  m_Layer: 0
+  m_Name: PotionSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &556088692
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556088691}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.48575392, z: -0, w: 0.87409556}
+  m_LocalPosition: {x: 0.054353617, y: 1.5466717, z: 0.53089345}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 333787381}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &557717806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4569,7 +4606,7 @@ PrefabInstance:
         type: 3}
       propertyPath: spawnPoint
       value: 
-      objectReference: {fileID: 811327457}
+      objectReference: {fileID: 0}
     - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
         type: 3}
       propertyPath: dialogueText
@@ -4648,16 +4685,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2124050941905689966, guid: 832db48e65a1b724fb523937ee7fe97a, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 832db48e65a1b724fb523937ee7fe97a, type: 3}
---- !u!4 &811327457 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2139588759965416282, guid: 832db48e65a1b724fb523937ee7fe97a,
-    type: 3}
-  m_PrefabInstance: {fileID: 811327456}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &817954021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9714,7 +9746,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2124050941905689966, guid: 832db48e65a1b724fb523937ee7fe97a, type: 3}
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8009627955684003278, guid: 832db48e65a1b724fb523937ee7fe97a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 556088692}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 832db48e65a1b724fb523937ee7fe97a, type: 3}
 --- !u!1001 &1511280247
