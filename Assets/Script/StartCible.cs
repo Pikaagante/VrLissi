@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Destroy : MonoBehaviour
+public class StartCible : MonoBehaviour
 {
-    public GameObject DestructObject;
     public Stat stat;
+    public GameObject DestructObject;
+
     void Start()
     {
         if (stat == null)
@@ -14,13 +15,12 @@ public class Destroy : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision other)
+    public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Weapon"))
+        if (other.gameObject.CompareTag("Player"))
         {
+            stat.StartTime();
             Destroy(DestructObject);
-            stat.SetCibleShoot(stat.CibleShoot + 1);
         }
     }
 }
-
