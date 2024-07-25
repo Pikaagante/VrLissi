@@ -39,6 +39,7 @@ public class Arrow : MonoBehaviour
         _rigidBody.AddForce(force, ForceMode.Impulse);
 
         StartCoroutine(RotateWithVelocity());
+        StartCoroutine(DestroyAfterTime(6));
 
         _lastPosition = tip.position;
 
@@ -70,9 +71,13 @@ public class Arrow : MonoBehaviour
     {
         if (Physics.Linecast(_lastPosition, tip.position, out RaycastHit hitInfo))
         {
-            if (hitInfo.transform.gameObject.layer != 10)
-            {
+            // Imprimer le nom du layer de l'objet rencontré
+            string layerName = LayerMask.LayerToName(hitInfo.transform.gameObject.layer);
+            Debug.Log("La flèche a rencontré un objet sur le layer: " + layerName);
 
+            // Ignorer si l'objet rencontré est sur le layer 10 ou 6
+            if (hitInfo.transform.gameObject.layer != 10 && hitInfo.transform.gameObject.layer != 6)
+            {
                 if (hitInfo.transform.TryGetComponent(out Rigidbody body))
                 {
                     _rigidBody.interpolation = RigidbodyInterpolation.None;
@@ -97,5 +102,11 @@ public class Arrow : MonoBehaviour
     {
         _rigidBody.useGravity = usePhysics;
         _rigidBody.isKinematic = !usePhysics;
+    }
+
+    private IEnumerator DestroyAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Destroy(gameObject);
     }
 }
