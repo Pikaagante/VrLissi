@@ -13,6 +13,7 @@ TagManager:
   - drink
   - dish
   - Cible
+  - Door
   layers:
   - Default
   - TransparentFX

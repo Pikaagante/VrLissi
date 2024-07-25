@@ -7,6 +7,8 @@ public class StatTowerDefense : MonoBehaviour
 {
     [SerializeField] private Text dialogueText;
     public int PvCastle = 20;
+    public int Vague;
+    public int EnnemisRestant;
 
     void Update()
     {
@@ -15,7 +17,9 @@ public class StatTowerDefense : MonoBehaviour
 
     public void UpdateCanvas()
     {
-        string displayText = "Point de vie restant = " + PvCastle.ToString() + "/20";
+        string displayText = "Point de vie restant = " + PvCastle.ToString() + "/20" + "\n" 
+            + "Vague :" + Vague.ToString() + "/3" + "\n" 
+            + "Ennemis restant" + EnnemisRestant.ToString();
 
         dialogueText.text = displayText;
     }

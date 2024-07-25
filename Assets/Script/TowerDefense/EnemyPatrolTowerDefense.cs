@@ -1,25 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyPatrolTowerDefense : MonoBehaviour
 {
     public float speed;
-    public Transform[] waypoints;
+    private Transform[] waypoints;
 
     private Transform target;
     private int destPoint = 0;
 
     public StatTowerDefense statTowerDefense;
 
-    void Start()
+    // Méthode pour définir les waypoints depuis l'extérieur
+    public void SetWaypoints(Transform[] newWaypoints)
     {
+        waypoints = newWaypoints;
+        destPoint = 0;
         if (waypoints.Length > 0)
         {
             target = waypoints[destPoint];
         }
+    }
 
-        if(statTowerDefense == null)
+    void Start()
+    {
+        if (statTowerDefense == null)
         {
             statTowerDefense = FindObjectOfType<StatTowerDefense>();
         }
@@ -33,7 +37,7 @@ public class EnemyPatrolTowerDefense : MonoBehaviour
         {
             statTowerDefense.SetPv();
             Destroy(gameObject);
-            return; 
+            return;
         }
 
         target = waypoints[destPoint];
