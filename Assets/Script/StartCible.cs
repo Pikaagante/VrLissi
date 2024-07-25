@@ -5,13 +5,18 @@ using UnityEngine;
 public class StartCible : MonoBehaviour
 {
     public Stat stat;
-    public GameObject DestructObject;
+    public List<GameObject> cibles; 
 
     void Start()
     {
         if (stat == null)
         {
             stat = FindObjectOfType<Stat>();
+        }
+
+        foreach (GameObject cible in cibles)
+        {
+            cible.SetActive(false);
         }
     }
 
@@ -20,7 +25,12 @@ public class StartCible : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             stat.StartTime();
-            Destroy(DestructObject);
+            // Activer toutes les cibles
+            foreach (GameObject cible in cibles)
+            {
+                cible.SetActive(true);
+            }
+            Destroy(gameObject);
         }
     }
 }

@@ -7,10 +7,12 @@ public class Fire : MonoBehaviour
     [SerializeField] private GameObject bullet;
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private float bulletSpeed = 10f;
+    public AudioSource bulletShoot;
     public Stat stat;
 
     void Start()
     {
+        bulletShoot = GetComponent<AudioSource>();
         if (stat == null)
         {
             stat = FindObjectOfType<Stat>();
@@ -31,6 +33,7 @@ public class Fire : MonoBehaviour
             return;
         }
 
+        AudioShoot();
         GameObject spawnBullet = Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);
         Rigidbody bulletRigidbody = spawnBullet.GetComponent<Rigidbody>();
         bulletRigidbody.useGravity = false;
@@ -39,5 +42,10 @@ public class Fire : MonoBehaviour
         stat.SetShoot(stat.Shoot + 1); // Increment Shoot count
 
         Destroy(spawnBullet, 5f);
+    }
+
+    public void AudioShoot()
+    {
+        bulletShoot.Play();
     }
 }
