@@ -9706,12 +9706,12 @@ PrefabInstance:
     - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
         type: 3}
       propertyPath: dialoguesDish.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
         type: 3}
       propertyPath: dialoguesDrink.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
         type: 3}
@@ -9721,7 +9721,7 @@ PrefabInstance:
     - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
         type: 3}
       propertyPath: dialoguesDish.Array.data[1]
-      value: Avoue tu as faim
+      value: Prend cette potion
       objectReference: {fileID: 0}
     - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
         type: 3}
@@ -9736,7 +9736,7 @@ PrefabInstance:
     - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
         type: 3}
       propertyPath: dialoguesDrink.Array.data[1]
-      value: Tu ne serais pas un peu alcoolique ?
+      value: Prend cette potion
       objectReference: {fileID: 0}
     - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
         type: 3}
