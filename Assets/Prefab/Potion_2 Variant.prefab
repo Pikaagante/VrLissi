@@ -331,7 +331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eebc34d77d1438b4ab97efd3487cd3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenename: SampleScene
+  scenename: Shoot
 --- !u!65 &5116472431474923726
 BoxCollider:
   m_ObjectHideFlags: 0

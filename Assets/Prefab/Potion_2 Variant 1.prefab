@@ -352,7 +352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dca45b35a76adc7448c3b54e777c8950, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenename2: Pnj2
+  scenename2: TowerDefense
 --- !u!4 &3056716948972106013 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8264669379082003018, guid: 4cc7771d476b46b47acab7069b9b0ded,

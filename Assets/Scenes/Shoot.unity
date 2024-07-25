@@ -1651,7 +1651,7 @@ MonoBehaviour:
   - {fileID: 1272534195}
   canvasToControl: {fileID: 258947734}
   stat: {fileID: 0}
-  scenename: Pnj
+  scenename: Hub
 --- !u!1001 &273226639
 PrefabInstance:
   m_ObjectHideFlags: 0
