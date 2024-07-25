@@ -10,6 +10,18 @@ public class EnemyPatrolTowerDefense : MonoBehaviour
 
     public StatTowerDefense statTowerDefense;
 
+    void Start()
+    {
+        if (statTowerDefense == null)
+        {
+            statTowerDefense = FindObjectOfType<StatTowerDefense>();
+            if (statTowerDefense == null)
+            {
+                Debug.LogError("StatTowerDefense n'a pas été trouvé dans la scène.");
+            }
+        }
+    }
+
     // Méthode pour définir les waypoints depuis l'extérieur
     public void SetWaypoints(Transform[] newWaypoints)
     {
@@ -18,14 +30,6 @@ public class EnemyPatrolTowerDefense : MonoBehaviour
         if (waypoints.Length > 0)
         {
             target = waypoints[destPoint];
-        }
-    }
-
-    void Start()
-    {
-        if (statTowerDefense == null)
-        {
-            statTowerDefense = FindObjectOfType<StatTowerDefense>();
         }
     }
 

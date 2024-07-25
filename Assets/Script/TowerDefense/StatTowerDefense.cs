@@ -18,8 +18,8 @@ public class StatTowerDefense : MonoBehaviour
     public void UpdateCanvas()
     {
         string displayText = "Point de vie restant = " + PvCastle.ToString() + "/20" + "\n" 
-            + "Vague :" + Vague.ToString() + "/3" + "\n" 
-            + "Ennemis restant" + EnnemisRestant.ToString();
+            + "Vague : " + Vague.ToString() + "/3" + "\n" 
+            + "Ennemis restant : " + EnnemisRestant.ToString();
 
         dialogueText.text = displayText;
     }
@@ -27,5 +27,10 @@ public class StatTowerDefense : MonoBehaviour
     public void SetPv()
     {
         PvCastle -= 1;
+    }
+
+    public void SetVague(int vague)
+    {
+        Vague = vague;
     }
 }

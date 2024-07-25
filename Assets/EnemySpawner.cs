@@ -5,7 +5,7 @@ public class EnemySpawner : MonoBehaviour
 {
     public Transform[] spawnPoints; // Points de spawn pour les ennemis
     public GameObject enemyPrefab; // Prefab de l'ennemi
-    public int[] enemiesPerWave = { 6, 12, 24 }; // Nombre d'ennemis par vague
+    public int[] enemiesPerWave = { 6, 12, 18 }; // Nombre d'ennemis par vague
     private int currentWave = 0; // Vague actuelle
 
     // Listes de waypoints pour chaque route
@@ -13,8 +13,20 @@ public class EnemySpawner : MonoBehaviour
     public Transform[] route2Waypoints;
     public Transform[] route3Waypoints;
 
+    public StatTowerDefense statTowerDefense;
+
     void Start()
     {
+        if (statTowerDefense == null)
+        {
+            statTowerDefense = FindObjectOfType<StatTowerDefense>();
+            if (statTowerDefense == null)
+            {
+                Debug.LogError("StatTowerDefense n'a pas été trouvé dans la scène.");
+                return; 
+            }
+        }
+
         StartCoroutine(SpawnWaves());
     }
 
@@ -22,6 +34,7 @@ public class EnemySpawner : MonoBehaviour
     {
         while (currentWave < enemiesPerWave.Length)
         {
+            statTowerDefense.SetVague(currentWave + 1);
             for (int i = 0; i < enemiesPerWave[currentWave]; i++)
             {
                 int spawnIndex = Random.Range(0, spawnPoints.Length);
@@ -46,10 +59,11 @@ public class EnemySpawner : MonoBehaviour
                     }
                 }
 
-                yield return new WaitForSeconds(3); // Attendre 3 secondes avant de faire apparaître le prochain ennemi
+                yield return new WaitForSeconds(5); // Attendre 3 secondes avant de faire apparaître le prochain ennemi
             }
 
-            yield return new WaitForSeconds(10); // Attendre 10 secondes avant de commencer la prochaine vague
+            yield return new WaitForSeconds(20); // Attendre 10 secondes avant de commencer la prochaine vague
+
             currentWave++;
         }
     }
