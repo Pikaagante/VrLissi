@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class StatTowerDefense : MonoBehaviour
 {
     [SerializeField] private Text dialogueText;
-    public int PvCastle = 20;
-    public int Vague;
-    public int EnnemisRestant;
+    public int PvCastle = 20; // Nombre de point de vie restant au chateau
+    public int Vague; // numéro de la vague
+    public int EnnemisRestant; 
 
     void Update()
     {

@@ -34,11 +34,11 @@ public class EnemySpawner : MonoBehaviour
     {
         while (currentWave < enemiesPerWave.Length)
         {
-            statTowerDefense.SetVague(currentWave + 1);
+            statTowerDefense.SetVague(currentWave + 1); //Permet d'afficher le numéro de la vague
             for (int i = 0; i < enemiesPerWave[currentWave]; i++)
             {
-                int spawnIndex = Random.Range(0, spawnPoints.Length);
-                Transform spawnPoint = spawnPoints[spawnIndex];
+                int spawnIndex = Random.Range(0, spawnPoints.Length); // Permet de générer un nbr pour avoir une route aléatoire
+                Transform spawnPoint = spawnPoints[spawnIndex]; // Assigner le spawnpoint de la route
                 GameObject enemy = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
 
                 // Assigner les waypoints en fonction de la route choisie
@@ -59,10 +59,10 @@ public class EnemySpawner : MonoBehaviour
                     }
                 }
 
-                yield return new WaitForSeconds(5); // Attendre 3 secondes avant de faire apparaître le prochain ennemi
+                yield return new WaitForSeconds(5); // Attendre 5 secondes avant de faire apparaître le prochain ennemi
             }
 
-            yield return new WaitForSeconds(20); // Attendre 10 secondes avant de commencer la prochaine vague
+            yield return new WaitForSeconds(20); // Attendre 20 secondes avant de commencer la prochaine vague
 
             currentWave++;
         }

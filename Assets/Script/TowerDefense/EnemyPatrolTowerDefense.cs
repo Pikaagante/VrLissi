@@ -22,7 +22,7 @@ public class EnemyPatrolTowerDefense : MonoBehaviour
         }
     }
 
-    // Méthode pour définir les waypoints depuis l'extérieur
+    // Méthode pour définir les waypoints
     public void SetWaypoints(Transform[] newWaypoints)
     {
         waypoints = newWaypoints;
@@ -33,14 +33,15 @@ public class EnemyPatrolTowerDefense : MonoBehaviour
         }
     }
 
+    // Aller au prochain point
     void GotoNextPoint()
     {
         destPoint++;
 
         if (destPoint >= waypoints.Length)
         {
-            statTowerDefense.SetPv();
-            Destroy(gameObject);
+            statTowerDefense.SetPv(); // Retirer 1 pv au chateau si l'ennemi atteint le dernier waypoint (porte)
+            Destroy(gameObject); // Detruire l'ennemi
             return;
         }
 
