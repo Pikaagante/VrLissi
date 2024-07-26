@@ -13,6 +13,7 @@ public class PnjDialogue : MonoBehaviour
     private void Start()
     {
         buttonScript = FindObjectOfType<ButtonScript>();
+
     }
 
     private void OnTriggerEnter(Collider other)

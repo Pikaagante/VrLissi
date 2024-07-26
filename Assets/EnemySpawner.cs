@@ -62,7 +62,7 @@ public class EnemySpawner : MonoBehaviour
                 yield return new WaitForSeconds(5); // Attendre 5 secondes avant de faire apparaître le prochain ennemi
             }
 
-            yield return new WaitForSeconds(20); // Attendre 20 secondes avant de commencer la prochaine vague
+            yield return new WaitForSeconds(10); // Attendre 10 secondes avant de commencer la prochaine vague
 
             currentWave++;
         }
