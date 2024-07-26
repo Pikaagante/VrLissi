@@ -2311,12 +2311,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1726723850}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &333787381 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8009627955684003278, guid: 832db48e65a1b724fb523937ee7fe97a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1506801590}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &339015095 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4748624645171214, guid: 56edbd376562e9544ab88753fd3c4682,
@@ -3399,12 +3393,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556088691}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.48575392, z: -0, w: 0.87409556}
-  m_LocalPosition: {x: 0.054353617, y: 1.5466717, z: 0.53089345}
+  m_LocalRotation: {x: 0.0002990598, y: -0.90942156, z: -0.000044830143, w: -0.41587546}
+  m_LocalPosition: {x: 0.022, y: 1.415, z: 0.449}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 333787381}
+  m_Father: {fileID: 931224874}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &557717806
 PrefabInstance:
@@ -5646,6 +5640,62 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &931224870 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1782702501690864755, guid: 60770bdb4dc667c45bea53db0339dc05,
+    type: 3}
+  m_PrefabInstance: {fileID: 1685538984}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &931224871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931224870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3a4b8860fdd9e4eb6ace79b1c599fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasToControl: {fileID: 53077311}
+  dialogues:
+  - It's dangerous
+  - To go alone
+  - Take this
+  dialoguesDrink:
+  - Je vois que tu m'apportes une bouteille
+  - Prend cette potion
+  dialoguesDish:
+  - Je vois que tu m'apportes une assiette
+  - Prend cette potion
+--- !u!65 &931224872
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931224870}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.53708124, y: 1.7709558, z: 1}
+  m_Center: {x: 0.008434534, y: 1.0657276, z: 0}
+--- !u!4 &931224874 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1438546959266459337, guid: 60770bdb4dc667c45bea53db0339dc05,
+    type: 3}
+  m_PrefabInstance: {fileID: 1685538984}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &934049089 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6071182890408227243, guid: 70f2476d20751ab40955cefa08b6f978,
@@ -9593,166 +9643,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2063728859}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1506801590
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8009627955684003278, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.0293884
-      objectReference: {fileID: 0}
-    - target: {fileID: 8009627955684003278, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.1266718
-      objectReference: {fileID: 0}
-    - target: {fileID: 8009627955684003278, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -4.87879
-      objectReference: {fileID: 0}
-    - target: {fileID: 8009627955684003278, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.8170923
-      objectReference: {fileID: 0}
-    - target: {fileID: 8009627955684003278, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8009627955684003278, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.576507
-      objectReference: {fileID: 0}
-    - target: {fileID: 8009627955684003278, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8009627955684003278, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8009627955684003278, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -289.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 8009627955684003278, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8012555948636989774, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: m_Name
-      value: Pnj
-      objectReference: {fileID: 0}
-    - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: potionEpee
-      value: 
-      objectReference: {fileID: 2387034736654920615, guid: e5043eb9e149702498bc161a46b9d4c1,
-        type: 3}
-    - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: spawnPoint
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: dialogueText
-      value: 
-      objectReference: {fileID: 1577360584}
-    - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: potionWeapon
-      value: 
-      objectReference: {fileID: 2387034736654920615, guid: c83975ee696d7544bb1182879f429332,
-        type: 3}
-    - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: canvasToControl
-      value: 
-      objectReference: {fileID: 53077311}
-    - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: dialogues.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: dialogues.Array.data[0]
-      value: It's dangerous
-      objectReference: {fileID: 0}
-    - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: dialogues.Array.data[1]
-      value: To go alone
-      objectReference: {fileID: 0}
-    - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: dialogues.Array.data[2]
-      value: Take this
-      objectReference: {fileID: 0}
-    - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: dialoguesDish.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: dialoguesDrink.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: dialoguesDish.Array.data[0]
-      value: Je vois que tu m'apportes une assiette
-      objectReference: {fileID: 0}
-    - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: dialoguesDish.Array.data[1]
-      value: Prend cette potion
-      objectReference: {fileID: 0}
-    - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: dialoguesDish.Array.data[2]
-      value: Prend cette potion
-      objectReference: {fileID: 0}
-    - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: dialoguesDrink.Array.data[0]
-      value: Je vois que tu m'apportes une bouteille
-      objectReference: {fileID: 0}
-    - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: dialoguesDrink.Array.data[1]
-      value: Prend cette potion
-      objectReference: {fileID: 0}
-    - target: {fileID: 8551802848310793695, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      propertyPath: dialoguesDrink.Array.data[2]
-      value: Prend cette potion
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 2124050941905689966, guid: 832db48e65a1b724fb523937ee7fe97a, type: 3}
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 8009627955684003278, guid: 832db48e65a1b724fb523937ee7fe97a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 556088692}
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 832db48e65a1b724fb523937ee7fe97a, type: 3}
 --- !u!1001 &1511280247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10666,6 +10556,86 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1861939657}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1685538984
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1438546959266459337, guid: 60770bdb4dc667c45bea53db0339dc05,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438546959266459337, guid: 60770bdb4dc667c45bea53db0339dc05,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.1266718
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438546959266459337, guid: 60770bdb4dc667c45bea53db0339dc05,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.965
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438546959266459337, guid: 60770bdb4dc667c45bea53db0339dc05,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8304875
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438546959266459337, guid: 60770bdb4dc667c45bea53db0339dc05,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438546959266459337, guid: 60770bdb4dc667c45bea53db0339dc05,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.55703735
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438546959266459337, guid: 60770bdb4dc667c45bea53db0339dc05,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438546959266459337, guid: 60770bdb4dc667c45bea53db0339dc05,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438546959266459337, guid: 60770bdb4dc667c45bea53db0339dc05,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 67.702
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438546959266459337, guid: 60770bdb4dc667c45bea53db0339dc05,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782702501690864755, guid: 60770bdb4dc667c45bea53db0339dc05,
+        type: 3}
+      propertyPath: m_Name
+      value: HumanMale_Character_FREE
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1438546959266459337, guid: 60770bdb4dc667c45bea53db0339dc05,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 556088692}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1782702501690864755, guid: 60770bdb4dc667c45bea53db0339dc05,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 931224872}
+    - targetCorrespondingSourceObject: {fileID: 1782702501690864755, guid: 60770bdb4dc667c45bea53db0339dc05,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 931224871}
+  m_SourcePrefab: {fileID: 100100000, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
 --- !u!1001 &1686860512
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13347,7 +13317,7 @@ SceneRoots:
   - {fileID: 53404241}
   - {fileID: 2049387507}
   - {fileID: 532317912}
-  - {fileID: 1506801590}
   - {fileID: 811327456}
   - {fileID: 1011960343}
   - {fileID: 316159089}
+  - {fileID: 1685538984}
