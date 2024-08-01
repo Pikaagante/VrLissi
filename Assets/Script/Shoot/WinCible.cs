@@ -8,14 +8,14 @@ public class WinCible : MonoBehaviour
     public Transform[] Cibles;
     [SerializeField] private Canvas canvasToControl;
     private int destroyedCiblesCount = 0;
-    public Stat stat;
+    public StatShoot stat;
     public string scenename;
 
     void Start()
     {
         if (stat == null)
         {
-            stat = FindObjectOfType<Stat>();
+            stat = FindObjectOfType<StatShoot>();
         }
     }
     public void CibleDestroyed()

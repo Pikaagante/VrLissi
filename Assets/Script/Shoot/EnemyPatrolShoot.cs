@@ -8,6 +8,15 @@ public class EnemyPatrolShoot : MonoBehaviour
     private Transform target;
     private int destPoint = 0;
 
+    public StatShoot stat;
+
+    void Start()
+    {
+        if (stat == null)
+        {
+            stat = FindObjectOfType<StatShoot>();
+        }
+    }
 
     // Méthode pour définir les waypoints
     public void SetWaypoints(Transform[] newWaypoints)
@@ -27,6 +36,7 @@ public class EnemyPatrolShoot : MonoBehaviour
 
         if (destPoint >= waypoints.Length)
         {
+            stat.SetCibleMiss();
             Destroy(gameObject); // Detruire l'ennemi
             return;
         }

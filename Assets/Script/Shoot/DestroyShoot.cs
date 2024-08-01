@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class DestroyShoot : MonoBehaviour
 {
-    public Stat stat;
+    public StatShoot stat;
     public WinCible winCible;
 
     void Start()
     {
         if (stat == null)
         {
-            stat = FindObjectOfType<Stat>();
+            stat = FindObjectOfType<StatShoot>();
         }
 
         if (winCible == null)

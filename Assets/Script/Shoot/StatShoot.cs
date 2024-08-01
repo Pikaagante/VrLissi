@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Stat : MonoBehaviour
+public class StatShoot: MonoBehaviour
 {
     [SerializeField] private Text dialogueText;
     public int Shoot;
     public int Time;
     public int CibleShoot;
+    public int CibleMiss;
     private bool isTiming = false;
 
     void Update()
@@ -20,7 +21,8 @@ public class Stat : MonoBehaviour
     {
         string displayText = "Tir = " + Shoot.ToString() + "\n" +
                              "Time = " + Time.ToString() + "\n" +
-                             "Cible touchée = " + CibleShoot.ToString();
+                             "Cible touchée = " + CibleShoot.ToString() + "\n" +
+                             "Cible Manquée = " + CibleMiss.ToString() + "\n";
 
         dialogueText.text = displayText;
     }
@@ -56,5 +58,10 @@ public class Stat : MonoBehaviour
     public void SetCibleShoot(int cibleShoot)
     {
         CibleShoot = cibleShoot;
+    }
+
+    public void SetCibleMiss()
+    {
+        CibleMiss += 1;
     }
 }

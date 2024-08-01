@@ -75,7 +75,7 @@ public class EnemySpawnerShoot : MonoBehaviour
                     }
                 }
 
-                yield return new WaitForSeconds(1); // Attendre 1 secondes avant de faire apparaître le prochain ennemi
+                yield return new WaitForSeconds(2); // Attendre 1 secondes avant de faire apparaître le prochain ennemi
             }
 
             yield return new WaitForSeconds(10); // Attendre 10 secondes avant de commencer la prochaine vague

@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class StartCible : MonoBehaviour
 {
-    public Stat stat;
+    public StatShoot stat;
     public List<GameObject> cibles; 
 
     void Start()
     {
         if (stat == null)
         {
-            stat = FindObjectOfType<Stat>();
+            stat = FindObjectOfType<StatShoot>();
         }
 
         foreach (GameObject cible in cibles)

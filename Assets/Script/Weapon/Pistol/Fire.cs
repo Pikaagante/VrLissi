@@ -8,14 +8,14 @@ public class Fire : MonoBehaviour
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private float bulletSpeed = 10f;
     public AudioSource bulletShoot;
-    public Stat stat;
+    public StatShoot stat;
 
     void Start()
     {
         bulletShoot = GetComponent<AudioSource>();
         if (stat == null)
         {
-            stat = FindObjectOfType<Stat>();
+            stat = FindObjectOfType<StatShoot>();
         }
     }
 
