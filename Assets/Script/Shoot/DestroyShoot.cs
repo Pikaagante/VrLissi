@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Destroy : MonoBehaviour
+public class DestroyShoot : MonoBehaviour
 {
-    public GameObject DestructObject;
     public Stat stat;
     public WinCible winCible;
+
     void Start()
     {
         if (stat == null)
@@ -24,7 +24,7 @@ public class Destroy : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Weapon"))
         {
-            Destroy(DestructObject);
+            Destroy(gameObject);
             stat.SetCibleShoot(stat.CibleShoot + 1);
             if (winCible != null)
             {
