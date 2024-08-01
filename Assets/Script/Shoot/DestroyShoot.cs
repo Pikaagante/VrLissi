@@ -26,10 +26,6 @@ public class DestroyShoot : MonoBehaviour
         {
             Destroy(gameObject);
             stat.SetCibleShoot(stat.CibleShoot + 1);
-            if (winCible != null)
-            {
-                winCible.CibleDestroyed();
-            }
         }
     }
 }

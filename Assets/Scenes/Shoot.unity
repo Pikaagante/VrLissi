@@ -1717,13 +1717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21bf7dbd4a00f0649bb2570e4eda0be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cibles:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   canvasToControl: {fileID: 258947734}
-  stat: {fileID: 0}
   scenename: Hub
 --- !u!1001 &273226639
 PrefabInstance:
@@ -2109,7 +2103,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326138822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1765}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2118,7 +2112,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 249, y: -119.5}
+  m_AnchoredPosition: {x: 176.8, y: -119.5}
   m_SizeDelta: {x: 238.75, y: 66.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &326138824
@@ -3147,6 +3141,7 @@ MonoBehaviour:
   Shoot: 0
   Time: 0
   CibleShoot: 0
+  CibleMiss: 0
 --- !u!1 &454582726
 GameObject:
   m_ObjectHideFlags: 0
@@ -10746,8 +10741,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14, y: 7.3911}
-  m_SizeDelta: {x: 116.5, y: 78.262}
+  m_AnchoredPosition: {x: 1.5, y: 2.8}
+  m_SizeDelta: {x: 164.3, y: 80.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1278940318
 MonoBehaviour:
@@ -13659,6 +13654,7 @@ MonoBehaviour:
   route10Waypoints:
   - {fileID: 637173419}
   - {fileID: 1471024137}
+  canvaWin: {fileID: 258947734}
 --- !u!1001 &1705942831
 PrefabInstance:
   m_ObjectHideFlags: 0

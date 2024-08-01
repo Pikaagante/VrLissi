@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class EnemyPatrolShoot : MonoBehaviour
 {
@@ -18,7 +18,7 @@ public class EnemyPatrolShoot : MonoBehaviour
         }
     }
 
-    // Méthode pour définir les waypoints
+    // Mï¿½thode pour dï¿½finir les waypoints
     public void SetWaypoints(Transform[] newWaypoints)
     {
         waypoints = newWaypoints;

@@ -20,10 +20,21 @@ public class EnemySpawnerShoot : MonoBehaviour
     public Transform[] route9Waypoints;
     public Transform[] route10Waypoints;
 
+    [SerializeField] private Canvas canvaWin;
+
 
     void Start()
     {
         StartCoroutine(SpawnWaves());
+    }
+
+    void Update()
+    {
+
+        if (currentWave >= enemiesPerWave.Length)
+        {
+            canvaWin.enabled = true;
+        }
     }
 
     IEnumerator SpawnWaves()
@@ -75,7 +86,7 @@ public class EnemySpawnerShoot : MonoBehaviour
                     }
                 }
 
-                yield return new WaitForSeconds(2); // Attendre 1 secondes avant de faire apparaître le prochain ennemi
+                yield return new WaitForSeconds(1); // Attendre 1 secondes avant de faire apparaître le prochain ennemi
             }
 
             yield return new WaitForSeconds(10); // Attendre 10 secondes avant de commencer la prochaine vague

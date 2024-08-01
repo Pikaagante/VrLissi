@@ -5,28 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class WinCible : MonoBehaviour
 {
-    public Transform[] Cibles;
     [SerializeField] private Canvas canvasToControl;
-    private int destroyedCiblesCount = 0;
-    public StatShoot stat;
-    public string scenename;
 
-    void Start()
-    {
-        if (stat == null)
-        {
-            stat = FindObjectOfType<StatShoot>();
-        }
-    }
-    public void CibleDestroyed()
-    {
-        destroyedCiblesCount++;
-        if (destroyedCiblesCount >= Cibles.Length)
-        {
-            canvasToControl.enabled = true;
-            stat.StopTime();
-        }
-    }
+    public string scenename;
 
     public void ReturnHub()
     {
