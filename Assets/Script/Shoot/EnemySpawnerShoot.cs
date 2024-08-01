@@ -5,7 +5,7 @@ public class EnemySpawnerShoot : MonoBehaviour
 {
     public Transform[] spawnPoints; // Points de spawn pour les ennemis
     public GameObject enemyPrefab; // Prefab de l'ennemi
-    public int[] enemiesPerWave = { 6, 12, 18 }; // Nombre d'ennemis par vague
+    public int[] enemiesPerWave = { 1, 6, 12, 18 }; // Nombre d'ennemis par vague
     private int currentWave = 0; // Vague actuelle
 
     // Listes de waypoints pour chaque route
@@ -39,10 +39,12 @@ public class EnemySpawnerShoot : MonoBehaviour
 
     IEnumerator SpawnWaves()
     {
+        Debug.Log($"Starting SpawnWaves with currentWave = {currentWave}"); // Ajoutez ce log
         while (currentWave < enemiesPerWave.Length)
         {
             for (int i = 0; i < enemiesPerWave[currentWave]; i++)
             {
+                Debug.Log($"Starting wave {currentWave + 1} with {enemiesPerWave[currentWave]} enemies."); // Log pour chaque vague
                 int spawnIndex = Random.Range(0, spawnPoints.Length); // Permet de générer un nbr pour avoir une route aléatoire
                 Transform spawnPoint = spawnPoints[spawnIndex]; // Assigner le spawnpoint de la route
                 GameObject enemy = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
