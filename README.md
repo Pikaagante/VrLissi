@@ -8,7 +8,7 @@ La finalité est de laisser aux joueurs la possibilité de choisir un objet qui 
 
 
 ## Si vous utilisez un Occulus Quest :
-1. Télécharger Github et importer le projet dessus
+1. Télécharger Unity et importer le projet dessus
 2. Télécharger steam et l'appication steam VR
 3. Télécharger le setup occulus disponible ici : https://drive.google.com/file/d/1AMpODH-CYhf19e4O5DiJwjbAPFRPFfr4/view?usp=sharing
 
